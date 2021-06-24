@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Pat_Reg.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="DashBoard.html">Welcome...Admin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="./Pat_Reg.html">Patient Registration <span
+                            class="sr-only">(current)</span></a>
+                    <!-- <a class="nav-link" href="/">Patient Registration</a> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="">Lab</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Payments
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">OutDoor Payment</a>
+                        <a class="dropdown-item" href="#">Emergency</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Test Payments</a>
+                        <a class="dropdown-item" href="#">Admission</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" > <a href="index.html" class="text-dark" style="text-decoration: none;"> Logout</a></button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="mt-5 py-5 text-dark">Patient Registration Form</h2>
+
+        <div class="row">
+
+            <div class="col pt-3 pb-3" style="border: 2px solid white">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail4" class="text-dark">Name</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPassword4" class="text-dark">CNIC</label>
+                            <input type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail4" class="text-dark">Phone Number</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress" class="text-dark">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="inputPassword4" class="text-dark">Gender</label> <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label text-dark" for="inlineRadio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label text-dark" for="inlineRadio2">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputState" class="text-dark">Marital Status</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Married</option>
+                                <option>Unmarried</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputEmail4" class="text-dark">Employement</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="text-dark">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState" class="text-dark">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Punjab</option>
+                                <option>Sindh</option>
+                                <option>KPK</option>
+                                <option>Fata</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip" class="text-dark">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label text-dark" for="gridCheck">
+                                Poor
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-info btn-lg w-25 text-dark" data-toggle="modal"
+                            data-target="#myModal">Register</button>
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="alert alert-success alert-dismissible">
+                                    <a class="close" data-dismiss="modal" aria-label="close">&times;</a>
+                                    <strong>Success!</strong> Patient Regitered Successfully.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="blog-footer mt-5 text-center text-white">
+        <p>HIMS by Kaswa <a href="" class="text-white">HIMS Management System</a> by <a href="">@HIMS</a>.</p>
+        <p>
+
+        </p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
